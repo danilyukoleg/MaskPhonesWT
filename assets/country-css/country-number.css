@@ -1,0 +1,132 @@
+@import "flag-icon.min.css";
+span {
+	display: block;
+	width: 20px !important;
+	height: 20px;
+}
+
+p	{
+	margin: 0;
+	padding: 0;
+}
+
+.country-container {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.country-phone {
+	border-radius: 24px;
+	background-color: #fff;
+	cursor: pointer;
+	border: 1px solid rgb(233, 237, 239);
+	width: 100%;
+	max-width: 266px;
+	height: 52px;
+	padding: 10px 24px;
+	transition: 0.4s;
+}
+
+.country-phone:hover {
+	box-shadow: 0 2px 7px rgba(11, 20, 26, 0.09), 0 1px 2px rgba(11, 20, 26, 0.05);
+}
+
+.country-phone__item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.country-phone__item > div {
+	display: flex;
+	align-items: center;
+	column-gap: 8px;
+}
+
+.country__list {
+	list-style: none;
+	max-width: 284px;
+	max-height: 459px;
+	padding: 0 8px 8px 8px;
+	background-color: #233138;
+	color: #fff;
+	border-radius: 10px;
+	margin: 0;
+	transition: 0.2s;
+	transform-origin: left top;
+	transform: scale(0);
+}
+.country__list-clear {
+	display: block;
+	max-width: 284px;
+	max-height: 400px;
+	overflow-y: scroll;
+}
+.country__list-clear::-webkit-scrollbar {
+	width: 6px!important;
+	height: 6px!important;
+}
+.country__list-clear::-webkit-scrollbar-thumb {
+	background-color:  rgba(255, 255, 255,.2);
+	width: 6px!important;
+	height: 6px!important;
+}
+
+.country__list-clear::-webkit-scrollbar-track {
+	background-color: initial;
+}
+
+.country__list.scale {
+	transform: scale(1);
+}
+.country__list .country__list-item div.wrap {
+	width: 100%;
+	background-color:  #182229;
+	border-radius: 12px;
+	padding: 8px 16px;
+}
+
+.country__list .country__list-item:first-child {
+	column-gap: 8px;
+	padding: 16px 8px 8px 8px;
+
+}
+
+.country__list .country__list-item input {
+	all: unset;
+	width: 100%;
+	max-width: 100%;
+	background-color:  #182229;
+	border-radius: 0 12px 12px 0;
+
+}
+
+.country__list .country__list-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 8px;
+	cursor: pointer;
+}
+
+.country__list .country__list-item-hov:hover {
+	border-radius: 12px;
+	background-color: #182229;
+}
+
+.country__list .country__list-item > div {
+	display: flex;
+	align-items: center;
+	column-gap: 8px;
+}
+
+.country-code {
+	color: rgb(174, 186, 193);
+	font-size: 14px;
+}
+
+.country__descr p span {
+	color: rgb(174, 186, 193);
+	font-size: 14px;
+}
